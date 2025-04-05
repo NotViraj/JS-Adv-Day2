@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <p id="id3"></p>
+    <script>
+
+        class student {
+            constructor(name) {
+                this.name = name;
+            }
+            static abc () {
+                return "Hello! I am a student.";
+            }
+            static def () {
+                return "I study in grade 10.";
+            }
+            Hello () {
+                return "Hello! My Name is " + this.name + ".";
+            }
+        }
+        obj = new student("Viraj");
+        document.getElementById("id1").innerHTML = student.abc();
+        document.getElementById("id2").innerHTML = student.def();
+        document.getElementById("id3").innerHTML = obj.Hello();
+
+
+    </script>
+</body>
+</html>
