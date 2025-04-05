@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p id="abc"></p>
+    <script>
+
+        class car {
+            constructor(Brand)
+            {
+                this.Brand = Brand;
+            }
+            efg ()
+            {
+                return "This is a " + this.Brand + " car.";
+            }
+        }
+        class model extends car {
+            constructor(Brand, MODEL1)
+            {
+                super(Brand);
+                this.MODEL1 = MODEL1;
+            }
+            hij ()
+            {
+                return "This is a " + this.Brand + " car and the model is " + this.MODEL1 + ".";
+            }
+        }
+        let abcdefg = new model("BMW", "M5");
+        document.getElementById("abc").innerHTML = abcdefg.hij();
+
+
+    </script>
 </body>
 </html>
