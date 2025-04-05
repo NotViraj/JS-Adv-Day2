@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="abc"></p>
+    <p id="efg"></p>
+    <script>
+
+    class hij {
+        constructor(name, age, DOB) {
+            this.name = name;
+            this.age = age;
+            this.DOB = DOB;
+        }
+    }
+    obj = new hij("Viraj", 15, "2010-09-02");
+    document.getElementById("abc").innerHTML = "Hi! My name is " + obj.name + " and I am " + obj.age + " years old." + " I was born on " + obj.DOB + ".";
+    
+    obj2 = new klm ("Rudranshi", 8, "2017-11-16");
+    document.getElementById("efg").innerHTML = "Hi! My name is " + obj2.name + " and I am " + obj2.age + " years old." + " I was born on " + obj2.DOB + ".";
+    </script>
+</body>
+</html>
