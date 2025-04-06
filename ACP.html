@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Classes</title>
+</head>
+<body>
+    <script>
+        class Car {
+            static type() {
+                return "Vehicle";
+            }
+        }
+
+        class ElectricCar extends Car {
+            constructor(brand) {
+                super();
+                this.brand = brand;
+            }
+
+            display() {
+                return this.brand + " is an electric car";
+            }
+        }
+
+        const myCar = new ElectricCar("Tesla");
+        document.body.innerHTML = myCar.display() + "<br>" + Car.type();
+    </script>
+</body>
+</html>
